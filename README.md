@@ -27,7 +27,7 @@ I made this for my FreeNAS Jail. A rc.d script for auto starting pyLoad is inclu
 1. __Make sure you have the ports tree, if not run (will take a while). Install git via port OR binary package__
 ```Shell
 # portsnap fetch extract
-# cd /usr/ports/devel/git && make install clean
+# cd /usr/ports/devel/git && make install clean BATCH=yes
 # pkg_add -r git
 ```
 
@@ -35,7 +35,7 @@ I made this for my FreeNAS Jail. A rc.d script for auto starting pyLoad is inclu
 ```Shell
 # cd /usr/ports/www
 # git clone https://github.com/mrhanky17/pyload-freebsd.git pyload
-# cd pyload/ && make install clean
+# cd pyload/ && make install clean BATCH=yes
 ```
 
 3. __Enable and run pyLoad (if no pyload.conf exists, setup will be called first):__
