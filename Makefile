@@ -14,9 +14,9 @@ COMMENT=	A lightweight one-click download manager written in python
 LICENSE=	GPLv3
 
 RUN_DEPENDS=	${PYTHON_LIBDIR}/lib-dynload/_sqlite3.so:${PORTSDIR}/databases/py-sqlite3 \
-		${PYTHON_SITELIBDIR}/curl:${PORTSDIR}/ftp/py-curl \
+		${PYTHON_PKGNAMEPREFIX}pycurl>0:ftp/py-pycurl \
 		${PYTHON_SITELIBDIR}/django:${PORTSDIR}/www/py-django \
-		${PYTHON_SITELIBDIR}/PIL:${PORTSDIR}/graphics/py-imaging \
+		${PYTHON_SITELIBDIR}/PIL:${PORTSDIR}/graphics/py-pillow \
 		${PYTHON_SITELIBDIR}/Crypto:${PORTSDIR}/security/py-pycrypto \
 		${PYTHON_SITELIBDIR}/django:${PORTSDIR}/www/py-django
 
